@@ -8,7 +8,7 @@ import { PointerLockControls } from 'three/addons/controls/PointerLockControls.j
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const params = {
-    name: '/../src/assets/resources/IMG230.jpeg'
+    name: '../../src/assets/resources/IMG230.jpeg'
 };
 //const models = []; 
 let camera, scene, renderer, group;
@@ -60,7 +60,7 @@ function init() {
 
     // 使用GLTFLoader加载模型
     const loader1 = new GLTFLoader();
-    loader1.load('/../src/assets/resources/car1/scene.gltf', function(gltf) {
+    loader1.load('../../src/assets/resources/car1/scene.gltf', function(gltf) {
         const model1 = gltf.scene;
         model1.position.set(-20, 0, 0);
         //models.push(model1);
@@ -81,7 +81,7 @@ function init() {
 
     // 使用GLTFLoader加载模型
     const loader3 = new GLTFLoader();
-    loader3.load('/../src/assets/resources/car3/scene.gltf', function(gltf) {
+    loader3.load('../../src/assets/resources/car3/scene.gltf', function(gltf) {
         const model3 = gltf.scene;
         model3.position.set(0, 0, -20);
         scene.add(model3);
@@ -101,7 +101,7 @@ function init() {
 
     // 使用GLTFLoader加载模型
     const loader5 = new GLTFLoader();
-    loader5.load('/../src/assets/resources/car5/scene.gltf', function(gltf) {
+    loader5.load('../../src/assets/resources/car5/scene.gltf', function(gltf) {
         const model5 = gltf.scene;
         model5.position.set(20, 0, 0);
         scene.add(model5);
