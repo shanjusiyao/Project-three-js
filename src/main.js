@@ -8,7 +8,7 @@ import { PointerLockControls } from 'three/addons/controls/PointerLockControls.j
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const params = {
-    name: './src/resources/IMG230.jpeg'
+    name: '/src/resources/IMG230.jpeg'
 };
 //const models = []; 
 let camera, scene, renderer, group;
@@ -60,7 +60,7 @@ function init() {
 
     // 使用GLTFLoader加载模型
     const loader1 = new GLTFLoader();
-    loader1.load('./src/resources/car1/scene.gltf', function(gltf) {
+    loader1.load('/src/resources/car1/scene.gltf', function(gltf) {
         const model1 = gltf.scene;
         model1.position.set(-20, 0, 0);
         //models.push(model1);
@@ -101,7 +101,7 @@ function init() {
 
     // 使用GLTFLoader加载模型
     const loader5 = new GLTFLoader();
-    loader5.load('./src/resources/car5/scene.gltf', function(gltf) {
+    loader5.load('/src/resources/car5/scene.gltf', function(gltf) {
         const model5 = gltf.scene;
         model5.position.set(20, 0, 0);
         scene.add(model5);
