@@ -1,8 +1,8 @@
 /*import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-
 createApp(App).mount('#app')*/
+
 import * as THREE from 'three';
 import { PointerLockControls } from 'three/addons/controls/PointerLockControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
